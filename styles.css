@@ -1,0 +1,101 @@
+body {
+    margin: 0;    /* Removes default margin and padding applied by other browers */
+    padding: 0;
+    background-color: rgb(253,243,237);
+    background-position:center; 
+  }
+header {
+    display: flex;  /*Tells header it is a flex container now */
+    justify-content: space-evenly; /*evenly spaces child elements inside the container*/
+    align-items: center; /*vertically center the child elements inside the container*/
+    background-color: rgb(253, 218, 211);
+    color: rgb(248, 140, 144);
+    /* color: rgb(44,22,18); */
+    padding: 20px;
+    /* width: 100%; */
+    margin: 0 auto; /*centers the header horizontally on the page*/
+    flex-wrap: wrap; /*makes elements wrap onto a new line if there's not enough space*/
+    font-family: consolas;
+    /* border: 25px solid rgb(237, 212, 174);
+    border-radius: 100px; */
+}
+ .logo {
+   box-shadow: none;
+ }
+nav {
+    background-color:  rgb(253, 218, 211);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.306); /*puts slight shadow under header*/
+
+}
+nav ul {
+    /* display: inline-flex; */
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {    
+    margin: 0px;
+    
+}
+nav ul li a {
+    color: brown;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+nav ul li a:hover {
+    background-color: rgba(245, 145, 147, 0.256);
+}
+header img {
+    border-radius: 40%; /*round the corners of the element, adds rounded corners*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    max-width: 100%; /*insures image is responsive*/
+    height: auto; /*maintains the ratio when it's being resized*/
+    object-fit: cover; /*crops the image iwhtout distorting*/
+}
+
+
+h1 {
+    font-style: italic;
+
+}
+
+.intro {
+    max-width: 500px; /*limits the width for better readability*/
+    text-align: center;
+}
+/*Styling for entire Main section*/
+main {
+    display: flex; /*telling it it's a flex container*/
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+section {
+   padding: 30px;
+   margin: 8px;
+   border-radius: 8px;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.363);
+   margin-bottom: 20px; /*adds space to the bottom of each card*/
+   width: 100%;
+   max-width: 800px;
+}
+li {
+    margin-bottom: 10px; /*added more space between each list item*/
+}
+
+
+footer {
+    background-color: rgb(253, 218, 211);
+    color: rgb(251, 120, 142);
+    
+}
+.centerFooter {
+    text-align: center;
+}
+
+/* ABOUT PAGE */
