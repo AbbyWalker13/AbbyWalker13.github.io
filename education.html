@@ -1,45 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="intro">
-            <img class="logo" src="assets/namelogo.png" alt="Name Logo" width="225">
-        </div> 
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="education.html">Education and Career</a></li>
-            <li><a href="travel.html">Korea Travel and Work</a></li>
-            <li><a href="family.html">Family</a></li>
-        </ul>
-    </nav>
-    <main>
-    <section>
-    <h2>About Me</h2>
-    <p>I have two associate's (meaningless) and a bachelor's (slightly less meaningless) and am working on my master's degree. I spend my free time with my two toddlers going on various adventures and taking great joy in watching their childhood. I also do freelance work as a website developer, exercise regularly, and try to keep a good balance between a vibrant work and social life.</p>
-    </section>
-    <!-- Add a photo here -->
-     <section>
-        <h2>Work Experience</h2>
-        <p>I will add work experience depending on what job I get so I can tailor it to that.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="intro">
+                <img class="logo" src="assets/namelogo.png" alt="Name Logo" width="225">
+            </div> 
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="education.html">Education and Career</a></li>
+                <li><a href="travel.html">Travel and Work</a></li>
+                <li><a href="family.html">Family</a></li>
+            </ul>
+        </nav>
+        <main>
+        <section>
+        <h2 style="text-align: center;" style="text-align: center;">Work Experience</h2>
+        <p>I will add work experience when I have cooler work experience.</p>
         <ul>
             <li>cool work stuff</li>
             <li>another work thing</li>
             <li>again</li>
             <li>saranghae</li>
         </ul>
-     </section>
-     <section>
-        <h2>Mission Statement</h2>
-        <p>I am so virtuous and exemplary and umblemished and impeccable and would never do something with questionable morals and am perfection. Thanks chatgpt.</p>
-     </section>
-    </main>
+        </section>
+        <!-- Add a photo here -->
+        <section>
+            <h2 style="text-align: center;">Education</h2>
+            <img src="assets/graduation.jfif" alt="At Graduation" width="200">
+            <p>I will add work experience depending on what job I get so I can tailor it to that.</p>
+            <ul>
+                <li>High School Graduation 2017</li>
+                <li>Associate's Degree 2022</li>
+                <li>Bachelor's Degree 2024</li>
+                <li>Master's Degree -- Projected Graduation 2026</li>
+            </ul>
+        </section>
+        <section class="slideShowSection">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
 
-</body>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                    <img src="assets/img1.jfif" class="slideshowimg" style="width:50%">
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                    <img src="assets/img2.jfif" class="slideshowimg" style="width:50%">
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                    <img src="assets/img3.jfif" class="slideshowimg" style="width:50%">
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                    <img src="assets/img4.jfif" class="slideshowimg" style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                    <img src="assets/img5.jfif" class="slideshowimg" style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                    <img src="assets/img6.jfif" class="slideshowimg" style="width:50%" >
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                    <img src="assets/img7.jfif" class="slideshowimg" style="width:50%">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+            </section>
+        </main>
+            <script src="index.js"></script>
+    </body>
+    <footer class="centerFooter">
+        <h4>Learn More</h4>
+        <h4>Connect With Me</h4>
+         <a href="https://www.linkedin.com/in/abigail-walker-1963ba2ab" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+         <a href="https://www.instagram.com/abby_walker013/" target="_blank">Instagram</a>
+    </footer>
+
+</html>

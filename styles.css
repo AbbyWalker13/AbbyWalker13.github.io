@@ -5,23 +5,20 @@ body {
     background-position:center; 
   }
 header {
-    display: flex;  /*Tells header it is a flex container now */
+    display: flex;  
     justify-content: space-evenly; /*evenly spaces child elements inside the container*/
     align-items: center; /*vertically center the child elements inside the container*/
     background-color: rgb(253, 218, 211);
-    color: rgb(248, 140, 144);
-    /* color: rgb(44,22,18); */
+    color: rgba(43, 21, 17, 0.842);
     padding: 20px;
-    /* width: 100%; */
     margin: 0 auto; /*centers the header horizontally on the page*/
     flex-wrap: wrap; /*makes elements wrap onto a new line if there's not enough space*/
-    font-family: consolas;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* border: 25px solid rgb(237, 212, 174);
     border-radius: 100px; */
 }
- .logo {
-   box-shadow: none;
- }
+
+ 
 nav {
     background-color:  rgb(253, 218, 211);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.306); /*puts slight shadow under header*/
@@ -40,7 +37,8 @@ nav ul li {
     
 }
 nav ul li a {
-    color: brown;
+    color: rgba(43, 21, 17, 0.842);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -51,16 +49,23 @@ nav ul li a:hover {
 }
 header img {
     border-radius: 40%; /*round the corners of the element, adds rounded corners*/
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
     max-width: 100%; /*insures image is responsive*/
     height: auto; /*maintains the ratio when it's being resized*/
     object-fit: cover; /*crops the image iwhtout distorting*/
+    float: left;
+   margin-right: 40px;
+   display: block;
+   margin-left: 0%;
 }
 
 
 h1 {
     font-style: italic;
 
+}
+
+h2 {
+    float: center;
 }
 
 .intro {
@@ -75,27 +80,179 @@ main {
     padding: 30px;
 
 }
+main {
+    background-color: rgb(253,243,234);
+}
+img {
+    float: right;
+    padding: 10px;
+    margin-right:0;
+    margin-left: auto;
+    display: block;
+}
+
+
+
+.clay {
+    float: left;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
 section {
+   background-color: rgb(250, 243, 238);
    padding: 30px;
-   margin: 8px;
+   margin: 20px;
    border-radius: 8px;
    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.363);
    margin-bottom: 20px; /*adds space to the bottom of each card*/
    width: 100%;
    max-width: 800px;
 }
+
+.slideShowSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 li {
     margin-bottom: 10px; /*added more space between each list item*/
 }
 
+.hanguel {
+    
+float: left;
+padding: 20px;
+margin-right:0;
+margin-left: auto;
+display:block;
+}
 
 footer {
     background-color: rgb(253, 218, 211);
     color: rgb(251, 120, 142);
-    
 }
 .centerFooter {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-/* ABOUT PAGE */
+/* SLIDESHOW */
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%; /* Ensure the image takes full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  text-align: center; /* Center text if needed */
+}
+.slideshowimg {
+    float: none;
+}
+
+/* Center images */
+.mySlides img {
+  display: block; /* Makes the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(251, 120, 142);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(245, 145, 147, 0.256);
+}
+
+
+
+/* Number text (1/7 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.checked {
+    color: orange;
+  }
+
+/* TODO LIST */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
